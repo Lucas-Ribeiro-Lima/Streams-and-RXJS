@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream Study Presentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Stream and RxJS Study Presentation</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Introduction to Streams</h2>
+      <p>
+        In this study, we explore three types of streams:
+        <strong>ReadableStreams</strong> (data sources), <strong>TransformStreams</strong> (data manipulation),
+        and <strong>WritableStreams</strong> (data utilization). Streams process data asynchronously in "chunks",
+        ensuring real-time processing without blocking. Unlike traditional callback-based models, Node.js streams are promise-based, leveraging a smoother development experience.
+      </p>
+      <p>
+        Streams are implemented in pipelines, enabling a continuous flow of data. Examples include the <code>fs</code> module
+        for chunk-based file processing and the <code>http</code> module with status code 206 for serving partial content periodically, similar to a socket HTTP connection.
+      </p>
+    </section>
+
+    <section>
+      <h2>Recreating RxJS with Native Streams</h2>
+      <p>
+        Inspired by RxJS—a library following the reactive paradigm—we built a study canvas that allows free drawing with mouse or touch inputs.
+        This implementation integrates core operators such as <code>FromEvent</code>, <code>Map</code>, <code>Merge</code>, <code>SwitchMap</code>, and <code>TakeUntil</code>.
+        The video tutorial by (<a href="https://www.youtube.com/watch?v=-q5HhC71TBE" target="_blank" rel="noopener" rel="noreferrer"><strong>Erick Wendel</strong></a>)
+        served as the primary reference for this project.
+      </p>
+    </section>
+
+    <section>
+      <h2>Interactive Study Canvas</h2>
+      <p>Draw freely in the canvas below to experiment with RxJS-inspired event handling:</p>
+      <canvas id="draw-canvas">Your browser dont support canvas!</canvas>
+      <button id="clear-btn">Clear</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Study by Lucas Ribeiro Lima. Powered by Streams and RxJS concepts.</p>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>

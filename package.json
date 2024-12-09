@@ -1,0 +1,17 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server"
+  },
+  "keywords": [],
+  "author": "lucas ribeiro lima",
+  "license": "ISC",
+  "description": "Studies about node streams and web streams",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "node": "file:"
+  }
+}
